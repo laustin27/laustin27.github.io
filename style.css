@@ -26,3 +26,7 @@ a {
 img {
     text-align: center;
 }
+
+ul {
+    list-style-position: inside;
+}
