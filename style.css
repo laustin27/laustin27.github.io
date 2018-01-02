@@ -12,3 +12,9 @@ h1{
 li{
     text-align: center;
 }
+
+h3{
+    text-align: center;
+    font-family: georgia;
+    font-size: 30px;
+}
