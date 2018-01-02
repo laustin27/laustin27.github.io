@@ -1,24 +1,28 @@
-p{
+p {
     font-family: georgia;
     text-align: center;
 }
 
-h1{
+h1 {
     font-family: georgia;
     font-size: 60px;
     text-align: center;
 }
 
-li{
+li {
     text-align: center;
 }
 
-h3{
+h3 {
     text-align: center;
     font-family: georgia;
     font-size: 30px;
 }
 
-a{
+a {
+    text-align: center;
+}
+
+img {
     text-align: center;
 }
