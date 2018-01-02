@@ -21,12 +21,13 @@ h3 {
 
 .image {
     text-align: center;
+    border-style: solid;
+    border-width: 4px;
 }
 
 .links {
     text-align: center;
-    border-style: solid;
-    border-width: 4px;
+    
 }
 
 ul {
