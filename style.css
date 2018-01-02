@@ -34,6 +34,10 @@ h3 {
     
 }
 
+.footer {
+    border-bottom: 10px solid black;
+}
+
 ul {
     list-style-position: inside;
 }
