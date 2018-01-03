@@ -28,7 +28,8 @@ h1 {
 
 
 .maurice {
-    float: left;
+    position: relative;
+    left: 600px;
     height: 500px;
     width: 500px;
 }
