@@ -13,14 +13,12 @@ h1 {
     text-align: center;
 }
 
-.image {
+.border {
     text-align: center;
     margin: 0 auto;
     border: 10px rebeccapurple solid;
     height: 500px;
     width: 500px;
-    position: fixed;
-    left: 230px;
 }
 
 .photo {
