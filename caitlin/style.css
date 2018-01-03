@@ -13,14 +13,27 @@ h1 {
     text-align: center;
 }
 
-.border {
-    margin: 0 auto;
+.border1 {
+    position: relative
+        left: 50px;
     border: 10px rebeccapurple solid;
     height: 500px;
     width: 500px;
 }
 
-.photo {
+.photo1 {
+    height: 500px;
+    width: 500px;
+}
+
+.border2 {
+    float: left;
+    border: 10px rebeccapurple solid;
+    height: 500px;
+    width: 500px;
+}
+
+.photo2 {
     height: 500px;
     width: 500px;
 }
