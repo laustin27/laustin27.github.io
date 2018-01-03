@@ -15,12 +15,12 @@ h1 {
 .image {
     text-align: center;
     margin: 0 auto;
-    border: 4px red solid;
+    border: 10px rebeccapurple solid;
     height: 500px;
-    width: 400px;
+    width: 500px;
 }
 
 .photo {
     height: 500px;
-    width: 400px;
+    width: 500px;
 }
