@@ -33,14 +33,20 @@ h3, h4 {
     padding-bottom: 50px;
 }
 
-.image {
+.border {
     text-align: center;
     border-style: solid;
     border-width: 4px;
-    width: 823px;
+    width: 800px;
+    height: 400px;
     margin: 0 auto;
     padding: 1px 1px;
     background-color: black;
+}
+
+.image {
+    height: 400px;
+    width: 800px;  
 }
 
 .links {
