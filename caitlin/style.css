@@ -13,7 +13,7 @@ h1 {
     text-align: center;
 }
 
-.border1 {
+.borderus {
     position: relative
         left: 50px;
     border: 10px rebeccapurple solid;
@@ -21,19 +21,19 @@ h1 {
     width: 500px;
 }
 
-.photo1 {
+.us {
     height: 500px;
     width: 500px;
 }
 
-.border2 {
+.bordermaurice {
     float: left;
     border: 10px rebeccapurple solid;
     height: 500px;
     width: 500px;
 }
 
-.photo2 {
+.maurice {
     height: 500px;
     width: 500px;
 }
