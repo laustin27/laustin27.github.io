@@ -15,5 +15,5 @@ h1 {
 .image {
     text-align: center;
     margin: 0 auto;
-    width: 75%;
+    border: 4px red solid;
 }
