@@ -20,8 +20,7 @@ h1 {
     border: 10px rebeccapurple solid;
     height: 500px;
     width: 500px;
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 50px 50px;
 }
 
 .us {
