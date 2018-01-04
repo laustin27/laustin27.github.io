@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     text-decoration: underline;
     text-decoration-style: double;
+    margin-bottom: 20px;
 }
 
 img {
@@ -29,7 +30,8 @@ img {
 
 .caption {
     width: 500px; 
-    font-size: 12px; 
+    font-size: 20px; 
     text-align: center;
+    font-family: georgia;
 }
 
