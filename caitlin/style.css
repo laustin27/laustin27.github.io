@@ -31,3 +31,12 @@ img {
     height: 500px;
     width: 500px;
 }
+
+.centeredborder{
+    display: inline-block;
+    text-align: center;
+    border: 10px rebeccapurple outset;
+    height: 500px;
+    width: 500px;
+    margin: 50px 50px;
+}
