@@ -16,16 +16,6 @@ h1 {
     text-decoration-style: double;
 }
 
-/*.border {
-    display: inline-block;
-    position: relative;
-    left: 5%;
-    border: 10px rebeccapurple outset;
-    height: 500px;
-    width: 500px;
-    margin: 50px 50px;
-}
-*/
 img {
     display: inline-block;
     position: relative;
@@ -35,15 +25,5 @@ img {
     display: inline-block;
     height: 500px;
     width: 500px;
-    padding-bottom: 0.5em;
 }
 
-.centeredborder{
-    display: inline-block;
-    position: relative;
-    left: 32%;
-    border: 10px rebeccapurple outset;
-    height: 500px;
-    width: 500px;
-    margin: 0 auto;
-}
