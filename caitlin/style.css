@@ -8,6 +8,13 @@ body {
     width: 100%;
 }
 
+p {
+    text-align: center;
+    font-family: georgia;
+    font-size: 50px;
+    margin-top: 100px;
+    border-bottom: 10px black solid;
+}
 h1 {
     font-family: georgia;
     font-size: 50px;
