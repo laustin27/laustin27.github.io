@@ -33,6 +33,7 @@ img {
     font-size: 20px; 
     text-align: center;
     font-family: georgia;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+    border: 3px black solid;
 }
 
