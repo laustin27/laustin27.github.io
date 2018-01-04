@@ -35,7 +35,7 @@ img {
 .centeredborder{
     display: inline-block;
     position: relative;
-    left: 30%;
+    left: 32%;
     border: 10px rebeccapurple outset;
     height: 500px;
     width: 500px;
