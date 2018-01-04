@@ -52,8 +52,8 @@ img {
     font-family: georgia;
     margin-bottom: 50px;
     margin-left: 100px;
-    text-decoration: underline;
-    text-decoration-color: black;
-    color: black;
 }
 
+.caption a {
+    color: black;
+}
