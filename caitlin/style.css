@@ -19,7 +19,7 @@ h1 {
 .border {
     display: inline-block;
     position: relative;
-    left: 10%;
+    left: 5%;
     border: 10px rebeccapurple outset;
     height: 500px;
     width: 500px;
