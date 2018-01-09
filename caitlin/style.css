@@ -60,7 +60,7 @@ img {
 
 @media (max-width: 400px) {
     body {
-        width: 50%;
+        width: 100%;
     }
     
     img {
@@ -68,10 +68,10 @@ img {
         left: 62px;
         text-align: center;
         height: 250px;
-        width: 50%
+        width: 100%
     }
     
     .caption {
-        width: 50%;
+        width: 100%;
     }
 }
