@@ -68,7 +68,10 @@ img {
         left: 62px;
         text-align: center;
         height: 250px;
-        width: 250px;
-        display: block;
+        width: 50%
+    }
+    
+    .caption {
+        width: 50%;
     }
 }
