@@ -64,6 +64,8 @@ img {
     }
     
     img {
+        position: relative;
+        left: 62px;
         text-align: center;
         height: 250px;
         width: 250px;
