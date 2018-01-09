@@ -57,3 +57,9 @@ img {
 .caption a {
     color: black;
 }
+
+@media (max-width: 400px) {
+    body {
+        width: 50%;
+    }
+}
