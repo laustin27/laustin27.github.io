@@ -65,7 +65,7 @@ img {
     
     img {
         position: relative;
-        left: 10%;
+        left: 1%;
         height: 250px;
         width: 100%
     }
@@ -73,6 +73,6 @@ img {
     .caption {
         width: 100%;
         position: relative;
-        left: 10%;
+        left: 1%;
     }
 }
