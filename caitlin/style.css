@@ -65,13 +65,14 @@ img {
     
     img {
         position: relative;
-        left: 62px;
-        text-align: center;
+        left: 10%;
         height: 250px;
         width: 100%
     }
     
     .caption {
         width: 100%;
+        position: relative;
+        left: 10%;
     }
 }
