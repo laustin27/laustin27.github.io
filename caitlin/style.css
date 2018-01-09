@@ -40,8 +40,8 @@ img {
     border: 20px mediumaquamarine outset;
     margin: 0 auto;
     display: inline-block;
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 .caption {
