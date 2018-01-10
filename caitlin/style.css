@@ -37,7 +37,7 @@ img {
     display: inline-block;
     position: relative;
     left: 5%;
-    border: 20px hsl(240, 20%, 50%) outset;
+    border: 20px hsl(190, 20%, 50%) outset;
     margin: 0 auto;
     display: inline-block;
     height: 100%;
