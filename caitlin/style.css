@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: rgb(130, 60, 99);
+    background-color: rgba(130, 60, 99, .1);
     width: 100%;
 }
 
