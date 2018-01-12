@@ -1,0 +1,89 @@
+#header {
+    border-radius: 5px;
+    height: 75px;
+    width: 99%;
+    background-color: DarkCyan; /*Fallback background color*/
+    background-color: hsla(200, 50%, 30%, 0.5);
+    position: fixed;
+    z-index: 1;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+#footer {
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: DarkCyan; /*Fallback background color*/
+    background-color: hsla(200, 50%, 30%, 0.5);
+    clear: both;
+}
+
+.left {
+    border-radius: 5px;
+    height: 410px;
+    width: 8%;
+    background-color: CornFlowerBlue; /*Fallback background color*/
+    background-color: hsla(200, 50%, 50%, 0.5);
+    float: left;
+    margin-top: 75px;
+    margin-bottom: 15px;
+}
+
+.right {
+    border-radius: 5px;
+    height: 410px;
+    width: 90%;
+    background-color: Khaki; /*Fallback background color */
+    background-color: hsla(40, 70%, 50%, 0.5);
+    float: right;
+    margin-top: 75px;
+    margin-left: 5px;
+    margin-bottom: 15px
+}
+
+.name {
+    float: left;
+    font-family: Georgia, serif;
+    font-size: 40px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.email {
+     float: right;
+     font-family: Georgia, serif;
+     font-size: 15px;
+     margin-right: 10px;
+     margin-top: 10px;
+ }
+ 
+ .contactinfo {
+     text-align: center;
+     font-family: Georgia, serif;
+     font-size: 18px;
+ }
+ 
+ h3 {
+     margin-top: 20px;
+     margin-bottom: 1px;
+     margin-left: 4px;
+     font-family: Georgia, serif;
+     font-size: 20px;
+     text-decoration: underline;
+ }
+ 
+ p { 
+     margin-top: 3px;
+     margin-left: 6px;
+     font-family: Georgia, serif;
+     font-size: 15px;
+ }
+ 
+ .software {
+     margin-top: -7px;
+ }
+ 
+ ul {
+     margin-bottom: 3px;
+ }
