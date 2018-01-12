@@ -1,6 +1,6 @@
 #header {
     border-radius: 5px;
-    height: 20%;
+    height: 10%;
     width: 99%;
     background-color: DarkCyan; /*Fallback background color*/
     background-color: hsla(200, 50%, 30%, 0.5);
