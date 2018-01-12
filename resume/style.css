@@ -1,6 +1,6 @@
 #header {
     border-radius: 5px;
-    height: 10%;
+    height: 75px;
     width: 99%;
     background-color: DarkCyan; /*Fallback background color*/
     background-color: hsla(200, 50%, 30%, 0.5);
@@ -16,7 +16,7 @@ body {
 
 #footer {
     border-radius: 5px;
-    height: 10%;
+    height: 50px;
     width: 100%;
     background-color: DarkCyan; /*Fallback background color*/
     background-color: hsla(200, 50%, 30%, 0.5);
@@ -25,7 +25,7 @@ body {
 
 .left {
     border-radius: 5px;
-    height: 50%;
+    height: 410px;
     width: 8%;
     background-color: CornFlowerBlue; /*Fallback background color*/
     background-color: hsla(200, 50%, 50%, 0.5);
@@ -36,7 +36,7 @@ body {
 
 .right {
     border-radius: 5px;
-    height: 50%;
+    height: 410px;
     width: 90%;
     background-color: Khaki; /*Fallback background color */
     background-color: hsla(40, 70%, 50%, 0.5);
