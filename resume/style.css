@@ -10,6 +10,10 @@
     margin-bottom: 20px;
 }
 
+body {
+    color: black;
+}
+
 #footer {
     border-radius: 5px;
     height: 50px;
