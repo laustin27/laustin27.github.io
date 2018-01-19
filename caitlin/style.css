@@ -43,24 +43,24 @@ img {
 
 pic1 {
     grid-area: pic1;
+    text-align: center;
 }
 
 pic2 {
     grid-area: pic2;
+    text-align: center;
 }
 
 pic3 {
-    grid-area: pic3
-        margin-right: 25px;
+    grid-area: pic3;
+    text-align: center;
 }
 
 pic4 {
     grid-area: pic4;
+    text-align: center;
 }
 
-.caption a {
-    color: black;
-}
 
 .grid {
     display: grid;
