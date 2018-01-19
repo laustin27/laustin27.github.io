@@ -36,20 +36,17 @@ h1 {
 
 img {
     border: 20px hsl(190, 50%, 80%) outset;
-    margin: 0 auto;
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 500px;
+    margin-bottom: 70px;
 }
 
 pic1 {
     grid-area: pic1;
-    margin-right: 25px;
-    margin-bottom: 40px;
 }
 
 pic2 {
     grid-area: pic2;
-    margin-bottom: 40px;
 }
 
 pic3 {
