@@ -35,26 +35,26 @@ h1 {
 }
 
 img {
-    display: inline-block;
-    position: relative;
-    left: 5%;
     border: 20px hsl(190, 50%, 80%) outset;
     margin: 0 auto;
-    display: inline-block;
-    height: 100%;
-    width: 100%;
+    height: 300px;
+    width: 300px;
 }
 
 pic1 {
     grid-area: pic1;
+    margin-right: 25px;
+    margin-bottom: 40px;
 }
 
 pic2 {
     grid-area: pic2;
+    margin-bottom: 40px;
 }
 
 pic3 {
-    grid-area: pic3;
+    grid-area: pic3
+        margin-right: 25px;
 }
 
 pic4 {
