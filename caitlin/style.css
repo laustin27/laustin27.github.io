@@ -64,8 +64,9 @@ pic4 {
 
 .grid {
     display: grid;
-    grid-template-areas: "pic1 pic2"
-                         "pic3 pic 4";
+    grid-template-areas: 
+        "pic1 pic2"
+        "pic3 pic4";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     justify-items: center;
