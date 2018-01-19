@@ -43,7 +43,7 @@ img {
 
 .pic1, .pic1 a {
     grid-area: pic1;
-    text-align: center;
+    justify-self: center;
 }
 
 .pic2, .pic2 a {
