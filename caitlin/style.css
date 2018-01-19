@@ -71,7 +71,7 @@ pic4 {
                          "pic3 pic 4";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    justify-content: center;
+    justify-items: center;
 }
 
 @media (max-width: 600px) {
