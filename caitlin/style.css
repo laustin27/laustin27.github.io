@@ -44,21 +44,29 @@ img {
 .pic1, .pic1 a {
     grid-area: pic1;
     text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 .pic2, .pic2 a {
     grid-area: pic2;
     text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 .pic3, .pic3 a {
     grid-area: pic3;
     text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 .pic4, .pic4 a {
     grid-area: pic4;
     text-align: center;
+    color: black;
+    font-size: 20px;
 }
 
 
