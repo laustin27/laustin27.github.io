@@ -41,35 +41,23 @@ img {
     margin-bottom: 70px;
 }
 
-.pic1 {
+.pic1, .pic1 a {
     grid-area: pic1;
-}
-
-.pic1 a {
     text-align: center;
 }
 
-.pic2 {
+.pic2, .pic2 a {
     grid-area: pic2;
-}
-
-.pic2 a {
     text-align: center;
 }
 
-.pic3 {
+.pic3, .pic3 a {
     grid-area: pic3;
-}
-
-.pic3 a {
     text-align: center;
 }
 
-.pic4 {
+.pic4, .pic4 a {
     grid-area: pic4;
-}
-
-.pic4 a {
     text-align: center;
 }
 
