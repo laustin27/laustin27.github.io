@@ -111,10 +111,22 @@ img {
     img {
         height: 250px;
         width: 100%;
+        border: 10px hsl(190, 50%, 80%) outset;
     }
     
-    .caption {
-        width: 100%;
-        margin: auto;
+    .caption1 {
+        font-size: 15px;
+    }
+    
+    .caption2 {
+        font-size: 15px;
+    }
+    
+    .caption3 {
+        font-size: 15px;
+    }
+    
+    .caption4 {
+        font-size: 15px;
     }
 }
