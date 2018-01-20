@@ -42,34 +42,28 @@ img {
     margin-top: 100px;
 }
 
-.pic1, .pic1 a {
+.pic1 {
     grid-area: pic1;
-    text-align: center;
-    color: black;
-    font-size: 20px;
 }
 
-.pic2, .pic2 a {
+.pic2 {
     grid-area: pic2;
-    text-align: center;
-    color: black;
-    font-size: 20px;
 }
 
-.pic3, .pic3 a {
+.pic3 {
     grid-area: pic3;
-    text-align: center;
-    color: black;
-    font-size: 20px;
 }
 
-.pic4, .pic4 a {
+.pic4 {
     grid-area: pic4;
+   
+}
+
+.pic1 a, .pic2 a, .pic3 a, .pic4 a {
     text-align: center;
     color: black;
     font-size: 20px;
 }
-
 
 .grid {
     display: grid;
