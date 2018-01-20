@@ -44,6 +44,8 @@ img {
 
 .pic1 {
     grid-area: pic1;
+    justify-items: center;
+    align-items: center;
 }
 
 .pic2 {
