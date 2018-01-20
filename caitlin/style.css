@@ -119,7 +119,7 @@ img {
     }
     
     .pic1, .pic2, .pic3, .pic4 {
-        justify-items: center;
+        justify-content: center;
     }
     
     h1 {
