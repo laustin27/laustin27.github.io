@@ -114,20 +114,12 @@ img {
         border: 10px hsl(190, 50%, 80%) outset;
     }
     
-    .caption1 {
+    .caption1, .caption2, .caption3, .caption4 {
         font-size: 15px;
     }
     
-    .caption2 {
-        font-size: 15px;
-    }
-    
-    .caption3 {
-        font-size: 15px;
-    }
-    
-    .caption4 {
-        font-size: 15px;
+    .pic1, .pic2, .pic3, .pic4 {
+        justify-self: center;
     }
     
     h1 {
@@ -142,4 +134,6 @@ img {
     .footer p{
         font-size: 25px;
     }
+    
+    
 }
