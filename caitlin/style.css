@@ -38,6 +38,7 @@ img {
     border: 20px hsl(190, 50%, 80%) outset;
     height: 500px;
     width: 500px;
+    margin-right: -50px;
 }
 
 .pic1, .pic1 a {
