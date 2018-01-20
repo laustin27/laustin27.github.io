@@ -64,19 +64,19 @@ img {
    
 }
 
-.pic1 p {
+.caption1 {
     grid-area: caption1;
 }
 
-.pic2 p {
+.caption2 {
     grid-area: caption2;
 }
 
-.pic3 p {
+.caption3 {
     grid-area: caption3;
 }
 
-.pic4 p {
+.caption4 {
     grid-area: caption4;
 }
 
