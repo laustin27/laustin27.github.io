@@ -66,18 +66,30 @@ img {
 
 .caption1 {
     grid-area: caption1;
+    justify-self: center;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .caption2 {
     grid-area: caption2;
+    justify-self: center;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .caption3 {
     grid-area: caption3;
+    justify-self: center;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .caption4 {
     grid-area: caption4;
+    justify-self: center;
+    font-size: 20px;
+    text-decoration: underline;
 }
 
 .grid {
@@ -88,7 +100,7 @@ img {
         "pic3 pic4"
         "caption3 caption4";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 3fr 1fr);
+    grid-template-rows: repeat(2, 5fr 1fr);
     justify-content: center;
     align-content: center;
 }
