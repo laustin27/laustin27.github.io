@@ -64,20 +64,31 @@ img {
    
 }
 
-.pic1 a, .pic2 a, .pic3 a, .pic4 a {
-    justify-self: center;
-    color: black;
-    font-size: 30px;
-    margin-top: 20px;
+.pic1 p {
+    grid-area: caption1;
+}
+
+.pic2 p {
+    grid-area: caption2;
+}
+
+.pic3 p {
+    grid-area: caption3;
+}
+
+.pic4 p {
+    grid-area: caption4;
 }
 
 .grid {
     display: grid;
     grid-template-areas: 
         "pic1 pic2"
-        "pic3 pic4";
+        "caption1 caption2"
+        "pic3 pic4"
+        "caption3 caption4";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: repeat(2, 3fr 1fr);
     justify-content: center;
     align-content: center;
 }
