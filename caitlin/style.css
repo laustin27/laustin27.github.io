@@ -109,7 +109,7 @@ img {
     }
     
     img {
-        height: 250px;
+        height: 80%;
         width: 80%;
         border: 10px hsl(190, 50%, 80%) outset;
     }
