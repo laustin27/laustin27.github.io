@@ -112,6 +112,7 @@ img {
         height: 80%;
         width: 80%;
         border: 10px hsl(190, 50%, 80%) outset;
+        justify-self: center;
     }
     
     .caption1, .caption2, .caption3, .caption4 {
