@@ -1,2 +1,2 @@
 # tla15.github.io
-Hey Tim
+A personal webpage created for the purpose of teaching myself HTML and CSS
