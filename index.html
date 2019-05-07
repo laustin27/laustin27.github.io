@@ -56,6 +56,9 @@
                 <label for="size">Size (In Square Feet)</label>
                 <div class="input-group">
                     <input type="text" class="form-control" id="size" name="size">
+                    <div class="input-group-append">
+                        <span class="input-group-text">sq. feet</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,7 +92,7 @@
                 "<a class='card-header' data-toggle='collapse' href='#result" + price + size + "'>" +
                     "<div class='title'>" +
                         address +
-                    "</a>" +
+                    "</div>" +
                 "</a" +
                 "<div id='result" + price + size + "' class='collapse show'>" +
                     "<div class='card-body'>" +
