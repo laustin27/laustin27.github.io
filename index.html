@@ -21,6 +21,14 @@
     <h2>Welcome to the housing form! Fill it out and press submit</h2>
     <form>
         <div class="row mt-5">
+            <div class="col-sm-12">
+                <label for="address">Beds</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="address" name="address">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
             <div class="col-sm-6">
                 <label for="beds">Beds</label>
                 <div class="input-group">
@@ -61,6 +69,49 @@
             </div>
         </div>
     </form>
+    <div class="row">
+        <div id="col accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#resultAddress">
+                        Collapsible Group Item #1
+                    </a>
+                </div>
+                <div id="resultAddress" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                        Collapsible Group Item #2
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                        Collapsible Group Item #3
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum..
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 </body>
 </html>
@@ -70,25 +121,38 @@
         bath =  $('#bath').val();
         price = $('#price').val();
         size =  $('#size').val();
+        address =  $('#address').val();
 
-
-        $('.container').append(
-        "<div class='row result mt-3'>" +
-            "<div class='col-sm-2'>" +
-                "<p>Beds = " + beds + "</p>" +
-                "<p>Bath = " + bath + "</p>" +
-            "</div>" +
-            "<div class='col-sm-2'>" +
-                "<p>Price = " + price + "</p>" +
-                "<p>Size = " + size + "</p>" +
-            "</div>" +
-        "</div>"
-        );
+        $('#accordion').append(
+            "<div class='card'>" +
+                "<div class='card-header'>" +
+                    "<a class='card-link' data-toggle='collapse' href='#result" + address + "'>" +
+                        address +
+                    "</a>" +
+                "</div>" +
+                "<div id='result" + address + "' + "class='collapse show' data-parent='#accordion'> +
+                    "<div class='card-body'>" +
+                        "<div class='row result mt-3'>" +
+                            "<div class='col-sm-2'>" +
+                                "<p>Beds = " + beds + "</p>" +
+                                "<p>Bath = " + bath + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-2'>" +
+                                "<p>Price = " + price + "</p>" +
+                                "<p>Size = " + size + "</p>" +
+                            "</div>" +
+                        "</div>" +
+                    "</div>" +
+                "</div>" +
+           "</div>"
+        )
     };
 
     function clearForm() {
       $('#beds').val('');
       $('#bath').val('');
+      $('#price').val('');
+      $('#size').val('');
     }
 
 
