@@ -19,7 +19,7 @@
 <body>
 <div class="container">
     <h2>Welcome to the housing form! Fill it out and press submit</h2>
-    <form>
+    <form style="background-color: #B0C4DE;">
         <div class="row mt-5">
             <div class="col-sm-6">
                 <label for="beds">Beds</label>
@@ -28,6 +28,16 @@
             <div class="col-sm-6">
                 <label for="bath">Bath</label>
                 <input type="text" id="bath" name="bath">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-6">
+                <label for="price">Price</label>
+                <input type="text" id="price" name="price">
+            </div>
+            <div class="col-sm-6">
+                <label for="size">Size (In Square Feet)</label>
+                <input type="text" id="size" name="size">
             </div>
         </div>
         <div class="row mt-5">
@@ -45,14 +55,21 @@
 </html>
 <script type="text/javascript">
     function submitData() {
-        beds =  $('#beds').val()
-        bath =  $('#bath').val()
+        beds =  $('#beds').val();
+        bath =  $('#bath').val();
+        price = $('#price').val();
+        size =  $('#size').val();
+
 
         $('.container').append(
-        "<div class='row result'>" +
+        "<div class='row result mt-3'>" +
             "<div class='col-sm-2'>" +
                 "<p>Beds = " + beds + "</p>" +
                 "<p>Bath = " + bath + "</p>" +
+            "</div>" +
+            "<div class='col-sm-2'>" +
+                "<p>Price = " + price + "</p>" +
+                "<p>Size = " + size + "</p>" +
             "</div>" +
         "</div>"
         );
