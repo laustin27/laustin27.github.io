@@ -14,24 +14,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
 <body>
-<p>Hello World</p>
 <div class="row">
-    <div class="col-sm-6">
-        <label for="beds">Beds</label>
-        <input type="text" id="beds">
-    </div>
-    <div class="col-sm-6">
-        <label for="bath">Beds</label>
-        <input type="text" id="bath">
-    </div>
+    <form>
+        <div class="col-sm-6">
+            <label for="beds">Beds</label>
+            <input type="text" id="beds" name="beds">
+        </div>
+        <div class="col-sm-6">
+            <label for="bath">Bath</label>
+            <input type="text" id="bath" name="bath">
+        </div>
+        <button type="submit" class="btn-primary" id="submit_button">Submit</button>
+    </form>
 </div>
 
 
 </body>
 </html>
 <script type="text/javascript">
-    formData = {
-        beds: $('#beds'),
-        bath: $('#bath')
-    }
+    $('#submit_button').click(function() {
+        formData = {
+            beds: $('#beds'),
+            bath: $('#bath')
+        }
+        alert("You clicked it");
+        console.log(formData);
+    });
+
+
 </script>
