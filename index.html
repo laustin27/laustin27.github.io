@@ -81,7 +81,7 @@
 </html>
 <script type="text/javascript">
     function submitData() {
-        beds =  $('#beds').val();
+        beds =  parseInt($('#beds').val(), 10);
         bath =  $('#bath').val();
         price = $('#price').val();
         size =  $('#size').val();
@@ -97,17 +97,31 @@
                 "<div id='result" + price + size + "' class='collapse show'>" +
                     "<div class='card-body'>" +
                         "<div class='row pt-1'>" +
-                            "<div class='col-sm-2'>" +
+                            "<div class='col-sm-3'>" +
                                 "<p>Beds = " + beds + "</p>" +
                             "</div>" +
-                            "<div class='col-sm-2'>" +
+                            "<div class='col-sm-3'>" +
                                 "<p>Bath = " + bath + "</p>" +
                             "</div>" +
-                            "<div class='col-sm-2'>" +
+                            "<div class='col-sm-3'>" +
                                 "<p>Price = $" + price + "</p>" +
                             "</div>" +
-                            "<div class='col-sm-2'>" +
-                                "<p>Size = " + size + "Sq. Feet</p>" +
+                            "<div class='col-sm-3'>" +
+                                "<p>Size = " + size + " Sq. Feet</p>" +
+                            "</div>" +
+                        "</div>" +
+                        "<div class='row pt-1'>" +
+                            "<div class='col-sm-3'>" +
+                                "<p>Price per Square Foot = " + beds + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-3'>" +
+                                "<p>Ratio of bed to Size = " + bath + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-3'>" +
+                                "<p>Price per bedroom = $" + price + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-3'>" +
+                                "<p>Rent = " + size + " Sq. Feet</p>" +
                             "</div>" +
                         "</div>" +
                     "</div>" +
