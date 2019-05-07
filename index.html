@@ -57,7 +57,7 @@
                 <div class="input-group">
                     <input type="text" class="form-control" id="size" name="size">
                     <div class="input-group-append">
-                        <span class="input-group-text">sq. feet</span>
+                        <span class="input-group-text">Sq. Feet</span>
                     </div>
                 </div>
             </div>
@@ -96,14 +96,18 @@
                 "</div>" +
                 "<div id='result" + price + size + "' class='collapse show'>" +
                     "<div class='card-body'>" +
-                        "<div class='row result mt-3'>" +
+                        "<div class='row pt-1'>" +
                             "<div class='col-sm-2'>" +
                                 "<p>Beds = " + beds + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-2'>" +
                                 "<p>Bath = " + bath + "</p>" +
                             "</div>" +
                             "<div class='col-sm-2'>" +
-                                "<p>Price = " + price + "</p>" +
-                                "<p>Size = " + size + "</p>" +
+                                "<p>Price = $" + price + "</p>" +
+                            "</div>" +
+                            "<div class='col-sm-2'>" +
+                                "<p>Size = " + size + "Sq. Feet</p>" +
                             "</div>" +
                         "</div>" +
                     "</div>" +
@@ -117,6 +121,7 @@
       $('#bath').val('');
       $('#price').val('');
       $('#size').val('');
+      $('#address').val('');
     }
 
 
