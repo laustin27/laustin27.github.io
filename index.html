@@ -32,14 +32,15 @@
         <div class="row">
             <div class="col-sm-6"></div>
             <div class="col-sm-6 float-right"></div>
-            <button type="submit" class="btn-primary" id="submit_button">Submit</button>
+            <button type="button" class="btn-primary" id="submit_button">Submit</button>
         </div>
     </form>
 </div>
 </body>
 </html>
 <script type="text/javascript">
-    $('#submit_button').click(function() {
+    $('#submit_button').click(function(event) {
+        event.preventDefault();
         formData = {
             beds: $('#beds').val(),
             bath: $('#bath').val()
