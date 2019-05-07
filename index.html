@@ -81,11 +81,16 @@
 </html>
 <script type="text/javascript">
     function submitData() {
-        beds =  parseInt($('#beds').val(), 10);
-        bath =  $('#bath').val();
-        price = $('#price').val();
-        size =  $('#size').val();
+        beds =  parseFloat($('#beds').val(), 10);
+        bath =  parseFloat($('#bath').val(), 10);
+        price = parseFloat($('#price').val(), 10);
+        size =  parseFloat($('#size').val(), 10);
         address =  $('#address').val();
+
+        pricePerSqFoot = price / size;
+        rent = price / 3;
+        pricePerBedroom = price / beds;
+        noncommonToSize = size / (beds + bath);
 
         $('#accordion').append(
             "<div class='card'>" +
@@ -112,16 +117,16 @@
                         "</div>" +
                         "<div class='row pt-1'>" +
                             "<div class='col-sm-3'>" +
-                                "<p>Price per Square Foot = " + beds + "</p>" +
+                                "<p>Price per Square Foot = $" + pricePerSqFoot + "</p>" +
                             "</div>" +
                             "<div class='col-sm-3'>" +
-                                "<p>Ratio of bed to Size = " + bath + "</p>" +
+                                "<p>Ratio of Non-common areas to Size = " + noncommonToSize + "</p>" +
                             "</div>" +
                             "<div class='col-sm-3'>" +
-                                "<p>Price per bedroom = $" + price + "</p>" +
+                                "<p>Price per bedroom = $" + pricePerBedroom + "</p>" +
                             "</div>" +
                             "<div class='col-sm-3'>" +
-                                "<p>Rent = " + size + " Sq. Feet</p>" +
+                                "<p>Rent = $" + rent + "</p>" +
                             "</div>" +
                         "</div>" +
                     "</div>" +
