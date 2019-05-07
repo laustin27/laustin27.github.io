@@ -31,31 +31,35 @@
         </div>
         <div class="row">
             <div class="col-sm-6"></div>
-            <div class="col-sm-6 float-right"></div>
-            <button type="button" class="btn-primary" id="submit_button">Submit</button>
+            <div class="col-sm-6 float-right">
+                <button type="button" onclick="clearForm()" class="btn-secondary" id="clear_button">Clear</button>
+                <button type="button" onclick="submitData()" class="btn-primary" id="submit_button">Submit</button>
+            </div>
         </div>
     </form>
 </div>
 </body>
 </html>
 <script type="text/javascript">
-    $('#submit_button').click(function(event) {
-        event.preventDefault();
-        formData = {
-            beds: $('#beds').val(),
-            bath: $('#bath').val()
-        }
+    def submitData() {
+        beds =  $('#beds').val()
+        bath =  $('#bath').val()
+
         console.log(formData);
         $('.container').append(
         "<div class='row'>" +
             "<div class='col'>" +
-                "<p>Successful submit</p>" +
+                "<p>Beds = " + beds + "</p>" +
+                "<p>Bath = " + bath + "</p>" +
             "</div>" +
         "</div>"
         );
+    };
 
-
-    });
+    def clearForm() {
+      $('#beds').val() = '';
+      $('#bath').val() = '';
+    }
 
 
 </script>
