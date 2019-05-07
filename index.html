@@ -16,8 +16,8 @@
 </head>
 <body>
 <div class="container">
-    <div class="row">
-        <form>
+    <div class="row mt-5">
+        <form action="/results" method="get">
             <div class="col-sm-6">
                 <label for="beds">Beds</label>
                 <input type="text" id="beds" name="beds">
@@ -26,7 +26,7 @@
                 <label for="bath">Bath</label>
                 <input type="text" id="bath" name="bath">
             </div>
-            <button type="btn" class="btn-primary" id="submit_button">Submit</button>
+            <button type="button" class="btn-primary" id="submit_button">Submit</button>
         </form>
     </div>
 </div>
@@ -40,8 +40,9 @@
             beds: $('#beds'),
             bath: $('#bath')
         }
-        alert("You clicked it");
         console.log(formData);
+        alert("You clicked it");
+
     });
 
 
