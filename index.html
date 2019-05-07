@@ -18,7 +18,8 @@
 </head>
 <body style="background-color: #DCDCDC;">
 <div class="container">
-    <h2>Welcome to the housing form! Fill it out and press submit</h2>
+    <h2 class="float-center">Welcome to the housing form!</h2>
+    <a class="float-center" href="/caitlin">Click here for pictures of Maurice</a>
     <form>
         <div class="row mt-5">
             <div class="col-sm-12">
@@ -93,28 +94,14 @@
         noncommonToSize = (size / (beds + bath)).toFixed(2);
 
         $('#accordion').append(
-            "<div class='card pt-2'>" +
+            "<div class='card'>" +
                 "<div class='card-header' data-toggle='collapse' href='#result" + price + size + "'>" +
                     "<div class='title'>" +
-                        address +
+                        "<span>" + address + ": Bed/Bath = " + beds + "/" + bath + ", Price = $" + price + ", Size = " + size + " Sq. Feet</span>" +
                     "</div>" +
                 "</div>" +
                 "<div id='result" + price + size + "' class='collapse show'>" +
                     "<div class='card-body'>" +
-                        "<div class='row pt-1 border-bottom'>" +
-                            "<div class='col-sm-3'>" +
-                                "<p>Beds = " + beds + "</p>" +
-                            "</div>" +
-                            "<div class='col-sm-3'>" +
-                                "<p>Bath = " + bath + "</p>" +
-                            "</div>" +
-                            "<div class='col-sm-3'>" +
-                                "<p>Price = $" + price + "</p>" +
-                            "</div>" +
-                            "<div class='col-sm-3'>" +
-                                "<p>Size = " + size + " Sq. Feet</p>" +
-                            "</div>" +
-                        "</div>" +
                         "<div class='row pt-1'>" +
                             "<div class='col-sm-6'>" +
                                 "<h3>Rent = $" + rent + "</h3>" +
