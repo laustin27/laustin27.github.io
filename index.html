@@ -87,13 +87,13 @@
         size =  parseFloat($('#size').val(), 10);
         address =  $('#address').val();
 
-        pricePerSqFoot = price / size;
-        rent = price / 3;
-        pricePerBedroom = price / beds;
-        noncommonToSize = size / (beds + bath);
+        pricePerSqFoot = (price / size).toFixed(2);
+        rent = (price / 3).toFixed(2);
+        pricePerBedroom = (price / beds).toFixed(2);
+        noncommonToSize = (size / (beds + bath)).toFixed(2);
 
         $('#accordion').append(
-            "<div class='card'>" +
+            "<div class='card pt-2'>" +
                 "<div class='card-header' data-toggle='collapse' href='#result" + price + size + "'>" +
                     "<div class='title'>" +
                         address +
@@ -120,7 +120,7 @@
                                 "<h3>Rent = $" + rent + "</h3>" +
                             "</div>" +
                             "<div class='col-sm-6'>" +
-                                "<h3>Price per Square Foot = $" + pricePerSqFoot + "</h3>" +
+                                "<h3>Price/Sq. Foot = $" + pricePerSqFoot + "</h3>" +
                             "</div>" +
                         "</div>" +
                         "<div class='row pt-1'>" +
