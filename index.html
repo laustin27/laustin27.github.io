@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main Page</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <title>Housing</title>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
-    <div class="row mt-5">
-        <form action="/results" method="get">
+    <form>
+        <div class="row mt-5">
             <div class="col-sm-6">
                 <label for="beds">Beds</label>
                 <input type="text" id="beds" name="beds">
@@ -26,22 +27,30 @@
                 <label for="bath">Bath</label>
                 <input type="text" id="bath" name="bath">
             </div>
-            <button type="button" class="btn-primary" id="submit_button">Submit</button>
-        </form>
-    </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 float-right"></div>
+            <button type="submit" class="btn-primary" id="submit_button">Submit</button>
+        </div>
+    </form>
 </div>
-
-
 </body>
 </html>
 <script type="text/javascript">
     $('#submit_button').click(function() {
         formData = {
-            beds: $('#beds'),
-            bath: $('#bath')
+            beds: $('#beds').val(),
+            bath: $('#bath').val()
         }
         console.log(formData);
-        alert("You clicked it");
+        $('.container').append(
+        "<div class='row'>
+            <div class='col'>
+                <p>Successful submit</p>
+            </div>
+        </div>"
+        );
+
 
     });
 
