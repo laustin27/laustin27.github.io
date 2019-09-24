@@ -4,17 +4,21 @@
     <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./index.css" type="text/css">
     <title>Login</title>
 </head>
 <body>
-    <div class="imgcontainer">
-        <img src='caitlin/Maurice 1.jpg' style="height: 100px; width: 100px;"/>
+    <div class="row">
+        <div class="col-sm-6">
+            <img src='caitlin/Maurice 1.jpg' style="height: 200px; width: 200px;"/>
+        </div>
     </div>
 
     <div class="container">
-        <label for="uname"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" id="uname" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" id="email" required>
 
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" id="psw" required>
@@ -26,7 +30,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script>
-    var email = $('#uname');
+    var email = $('#email');
     var password = $('#psw');
     var authenticatedUser = true;
   // Your web app's Firebase configuration
