@@ -45,13 +45,22 @@
   firebase.initializeApp(firebaseConfig);
 
 
+  window.onload = function() {
+      firebase.auth().onAuthStateChanged(function(user) {
+            if (user) {
+                window.location = 'https://tla15.github.io/results.html';
+            }
+      });
+    };
+
 
   function login() {
     firebase.auth().signInWithEmailAndPassword($(email).val(), $(password).val()).catch(function(error) {
           alert("Problem signing in");
           authenticatedUser = false;
     });
-    window.location = 'https://tla15.github.io/results.html';
   }
+
+
 
 </script>
