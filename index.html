@@ -46,8 +46,7 @@
   firebase.initializeApp(firebaseConfig);
 
   function login() {
-    if ($(username).val() !== 'caitlin' ||
-        $(password).val() !== 'maurice') {
+    if ($(username).val() !== 'caitlin' || $(password).val() !== 'maurice') {
         alert('wrong credentials');
         return false;
     }
