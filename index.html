@@ -12,7 +12,7 @@
     </div>
 
     <div class="container">
-        <label for="uname"><b>Username</b></label>
+        <label for="uname"><b>Email</b></label>
         <input type="text" placeholder="Enter Username" id="uname" required>
 
         <label for="psw"><b>Password</b></label>
@@ -43,12 +43,14 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  function login() {
-    if ($(username).val() !== 'caitlin' || $(password).val() !== 'maurice') {
-        alert('wrong credentials');
-        return false;
-    }
-    window.location = 'https://tla15.github.io/results.html';
-  }
+     firebase.auth().createUserWithEmailAndPassword($(username).val(), $(password).val())
+
+<!--  function login() {-->
+<!--    if ($(username).val() !== 'caitlin' || $(password).val() !== 'maurice') {-->
+<!--        alert('wrong credentials');-->
+<!--        return false;-->
+<!--    }-->
+<!--    window.location = 'https://tla15.github.io/results.html';-->
+<!--  }-->
 
 </script>
