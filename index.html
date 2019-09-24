@@ -28,7 +28,7 @@
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 <script>
-    var username = $('#uname');
+    var email = $('#uname');
     var password = $('#psw');
   // Your web app's Firebase configuration
   var firebaseConfig = {
@@ -43,7 +43,9 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-     firebase.auth().createUserWithEmailAndPassword($(username).val(), $(password).val())
+  firebase.auth().signInWithEmailAndPassword($(email).val(), $(password).val()).catch(function(error) {
+          alert("Problem signing in");
+   });
 
 <!--  function login() {-->
 <!--    if ($(username).val() !== 'caitlin' || $(password).val() !== 'maurice') {-->
