@@ -3,6 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./index.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 <body>
     <form action="action_page.php" method="post">
         <div class="imgcontainer">
@@ -16,15 +17,10 @@
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" id="psw" required>
 
-            <button type="submit">Login</button>
+            <button type="submit" id="login-button" onclick="login()">Login</button>
             <label>
                 <input type="checkbox" checked="checked" id="remember"> Remember me
             </label>
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
 </body>
@@ -32,7 +28,8 @@
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
-
+    var username = $('#uname');
+    var password = $('#psw');
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
 
@@ -49,4 +46,14 @@
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
+
+  function login() {
+    if ($(username).val() !== 'caitlin' ||
+        $(password.val() !== 'maurice') {
+        alert('wrong credentials');
+        return false;
+    }
+    window.location = results.html
+  }
+
 </script>
