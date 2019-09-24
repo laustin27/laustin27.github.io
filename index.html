@@ -30,6 +30,7 @@
 <script>
     var email = $('#uname');
     var password = $('#psw');
+    var authenticatedUser = true;
   // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyAjbJFKTtec7G3GLguy4sYNuH2BZqChs7o",
@@ -48,7 +49,9 @@
   function login() {
     firebase.auth().signInWithEmailAndPassword($(email).val(), $(password).val()).catch(function(error) {
           alert("Problem signing in");
+          authenticatedUser = false;
     });
+    window.location = 'https://tla15.github.io/results.html';
   }
 
 </script>
