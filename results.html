@@ -28,18 +28,18 @@
         <button type="button" class="btn btn-primary float-right" onclick="signOut()">Sign Out</button>
     </div>
 </div>
-<div class="row">
-    <div class="col-sm-12">
+<div class="row pt-3">
+    <div class="col-sm-6">
         <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-            </div>
             <div class="custom-file">
                 <input type="file" class="custom-file-input" id="inputGroupFile01"
                        aria-describedby="inputGroupFileAddon01">
                 <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
             </div>
         </div>
+    </div>
+    <div class="col-sm-6">
+        <button type="button" class="btn btn-primary text-center" onclick="upload()">Upload</button>
     </div>
 </div>
 
@@ -68,4 +68,13 @@
         var fileName = $(this).val().split("\\").pop();
         $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
     });
+
+    function upload() {
+        firebase.database().ref('documents').push().set('test')
+        .then(function(snapshot) {
+            console.log('success');
+        }, function(error) {
+            console.log('error' + error);
+        });
+    }
 </script>
