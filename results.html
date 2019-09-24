@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-auth.js"></script>
 </head>
 <body>
 <p>hey there</p>
-<button onclick="signOut()"></button>
+<button onclick="signOut()">Sign Out</button>
 </body>
 </html>
 <script>
+
+    var firebaseConfig = {
+    apiKey: "AIzaSyAjbJFKTtec7G3GLguy4sYNuH2BZqChs7o",
+    authDomain: "logansproject.firebaseapp.com",
+    databaseURL: "https://logansproject.firebaseio.com",
+    projectId: "logansproject",
+    storageBucket: "",
+    messagingSenderId: "124077808478",
+    appId: "1:124077808478:web:be882df7c49a0050578dcf"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
     function signOut() {
         firebase.auth().signOut();
          window.location = 'https://tla15.github.io';
