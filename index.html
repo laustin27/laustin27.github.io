@@ -18,7 +18,7 @@
         <label for="psw"><b>Password</b></label>
         <input type="password" placeholder="Enter Password" id="psw" required>
 
-        <button id="login-button">Login</button>
+        <button id="login-button" onclick="login()">Login</button>
         <label>
             <input type="checkbox" checked="checked" id="remember"> Remember me
         </label>
@@ -43,16 +43,12 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-  firebase.auth().signInWithEmailAndPassword($(email).val(), $(password).val()).catch(function(error) {
-          alert("Problem signing in");
-   });
 
-<!--  function login() {-->
-<!--    if ($(username).val() !== 'caitlin' || $(password).val() !== 'maurice') {-->
-<!--        alert('wrong credentials');-->
-<!--        return false;-->
-<!--    }-->
-<!--    window.location = 'https://tla15.github.io/results.html';-->
-<!--  }-->
+
+  function login() {
+    firebase.auth().signInWithEmailAndPassword($(email).val(), $(password).val()).catch(function(error) {
+          alert("Problem signing in");
+    });
+  }
 
 </script>
