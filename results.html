@@ -6,5 +6,12 @@
 </head>
 <body>
 <p>hey there</p>
+<button onclick="signOut()"></button>
 </body>
 </html>
+<script>
+    function signOut() {
+        firebase.auth().signOut();
+         window.location = 'https://tla15.github.io';
+    }
+</script>
