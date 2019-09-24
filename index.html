@@ -1,145 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Housing</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link href="housing.css" type="text/css" rel="stylesheet">
-</head>
-<body style="background-color: #DCDCDC;">
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <h2 class="text-center">Welcome to the housing form!</h2>
-        </div>
+<form action="action_page.php" method="post">
+    <div class="imgcontainer">
+        <img src="img_avatar2.png" alt="Avatar" class="avatar">
     </div>
-    <div class="row">
-        <div class="col-sm-8">
-            <a class="float-right" href="/caitlin">Click here for pictures of Maurice</a>
-        </div>
+
+    <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" id="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" id="remember"> Remember me
+        </label>
     </div>
-    <form>
-        <div class="row mt-5">
-            <div class="col-sm-12">
-                <label for="address">Address</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="address" name="address">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-sm-6">
-                <label for="beds">Beds</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="beds" name="beds">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <label for="bath">Bath</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="bath" name="bath">
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-sm-6">
-                <label for="price">Price</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text">$</span>
-                    </div>
-                    <input type="text" class="form-control" id="price" name="price">
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <label for="size">Size (In Square Feet)</label>
-                <div class="input-group">
-                    <input type="text" class="form-control" id="size" name="size">
-                    <div class="input-group-append">
-                        <span class="input-group-text">Sq. Feet</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-5">
-            <div class="col-sm-8"></div>
-            <div class="col-sm-2 pr-2">
-                <button type="button" onclick="clearForm()" class="btn-secondary btn-block" id="clear_button">Clear</button>
-            </div>
-            <div class="col-sm-2 float-right">
-                <button type="button" onclick="submitData()" class="btn-primary btn-block" id="submit_button">Submit</button>
-            </div>
-        </div>
-    </form>
-    <div class="row mt-5">
-        <div id="accordion" class="col-sm-12">
-        </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
-</div>
-</body>
-</html>
-<script type="text/javascript">
-    function submitData() {
-        beds =  parseFloat($('#beds').val(), 10);
-        bath =  parseFloat($('#bath').val(), 10);
-        price = parseFloat($('#price').val(), 10);
-        size =  parseFloat($('#size').val(), 10);
-        address =  $('#address').val();
-
-        pricePerSqFoot = (price / size).toFixed(2);
-        rent = (price / 3).toFixed(2);
-        pricePerBedroom = (price / beds).toFixed(2);
-        noncommonToSize = (size / (beds + bath)).toFixed(2);
-
-        $('#accordion').append(
-            "<div class='card'>" +
-                "<div class='card-header' data-toggle='collapse' href='#result" + price + size + "'>" +
-                    "<div class='title'>" +
-                        "<span>" + address + ": Bed/Bath = " + beds + "/" + bath + ", Price = $" + price + ", Size = " + size + " Sq. Feet</span>" +
-                    "</div>" +
-                "</div>" +
-                "<div id='result" + price + size + "' class='collapse show'>" +
-                    "<div class='card-body'>" +
-                        "<div class='row pt-1'>" +
-                            "<div class='col-sm-6'>" +
-                                "<h3 class='text-center'>Rent = $" + rent + "</h3>" +
-                            "</div>" +
-                            "<div class='col-sm-6'>" +
-                                "<h3 class='text-center'>Price/Sq. Foot = $" + pricePerSqFoot + "</h3>" +
-                            "</div>" +
-                        "</div>" +
-                        "<div class='row pt-1'>" +
-                            "<div class='col-sm-6'>" +
-                                "<h5 class='text-center'>Ratio of Non-common areas to Size = " + noncommonToSize + "</h5>" +
-                            "</div>" +
-                            "<div class='col-sm-6'>" +
-                                "<h5 class='text-center'>Price per bedroom = $" + pricePerBedroom + "</h5>" +
-                            "</div>" +
-                        "</div>" +
-                    "</div>" +
-                "</div>" +
-           "</div>"
-        )
-        clearForm();
-    };
-
-    function clearForm() {
-      $('#beds').val('');
-      $('#bath').val('');
-      $('#price').val('');
-      $('#size').val('');
-      $('#address').val('');
-    }
+</form>
 
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAjbJFKTtec7G3GLguy4sYNuH2BZqChs7o",
+    authDomain: "logansproject.firebaseapp.com",
+    databaseURL: "https://logansproject.firebaseio.com",
+    projectId: "logansproject",
+    storageBucket: "",
+    messagingSenderId: "124077808478",
+    appId: "1:124077808478:web:be882df7c49a0050578dcf"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 </script>
