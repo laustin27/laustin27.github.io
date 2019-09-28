@@ -13,19 +13,17 @@
     #mo-tail {
         position: absolute;
         top: 36%;
-        left: 11%;
-        transform: rotate(30deg);
-        transform-origin: bottom;
+        left: 15%;
         transition: 300ms;
-        animation: shake .08s infinite alternate;
+        animation: wag .08s infinite alternate;
     }
 
-    @keyframes shake {
+    @keyframes wag {
         0% {
-            transform: rotate(30deg);
+            transform: rotate(-30deg);
         }
         100% {
-            transform: rotate(40deg);
+            transform: rotate(30deg);
         }
 }
 
