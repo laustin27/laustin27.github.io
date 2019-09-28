@@ -46,9 +46,40 @@
     </div>
 </body>
 <script>
+function whichAnimationEvent(){
+  var t,
+      el = document.createElement("fakeelement");
+
+  var animations = {
+    "animation"      : "animationend",
+    "OAnimation"     : "oAnimationEnd",
+    "MozAnimation"   : "animationend",
+    "WebkitAnimation": "webkitAnimationEnd"
+  }
+
+  for (t in animations){
+    if (el.style[t] !== undefined){
+      return animations[t];
+    }
+  }
+}
+
+var animationEvent = whichAnimationEvent();
+
+$(".button").click(function(){
+  $(this).addClass("animate");
+  $(this).one(animationEvent,
+              function(event) {
+    // Do something when the animation ends
+  });
+});
 
 function showLove() {
     $('#mo-tail').addClass('mo-tail-wag');
+    $('#mo-tail').one(animationEvent,
+              function(event) {
+    $('#mo-tail').removeClass('mo-tail-wag');
+  });
 }
 
 
