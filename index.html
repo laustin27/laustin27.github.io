@@ -10,12 +10,13 @@
     <title>Maurice</title>
 </head>
 <style>
-    #mo-tail {
+    .mo-tail {
         position: absolute;
         top: 36%;
         left: 15%;
-        transition: 300ms;
-        animation: wag .08s infinite alternate;
+        z-index: -1;
+        transition: 500ms;
+        animation: wag .5s infinite alternate;
     }
 
     @keyframes wag {
@@ -31,7 +32,7 @@
 <body class="my-4 mx-4" style="background: url(heart-background.png)">
     <div class="row my-auto">
         <div class="col-sm-12 text-center">
-            <img src="mo-tail.gif" id="mo-tail">
+            <img src="mo-tail.gif" class="mo-tail" id="mo-tail">
             <img src="mo-tummy.gif" onclick="showLove()">
         </div>
     </div>
@@ -39,7 +40,7 @@
 <script>
 
 function showLove() {
-
+    $('#mo-tail').addclass('mo-tail');
 }
 
 
