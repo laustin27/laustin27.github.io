@@ -20,7 +20,7 @@
 
     span{
       color:black;
-      font-size:2rem;
+      font-size:1.5rem;
       line-height:1;
       margin:0;
       padding:0;
@@ -38,13 +38,13 @@
     }
     
     .bold {
-       -webkit-animation: bold-anim 2s;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-iteration-count:infinite;
-
-      animation: bold-anim 2s;
-      animation-timing-function: linear;
-      animation-iteration-count:infinite;
+       -webkit-animation-name: bold-anim, shake;
+       -webkit-animation-duration: 2s, 0.5s;
+       -webkit-animation-iteration-count: infinite, infinite;
+        
+       animation-name: bold-anim, shake;
+       animation-duration: 2s, 0.5s;
+       animation-iteration-count: infinite, infinite;
     }
 
     @-webkit-keyframes anim {
@@ -76,7 +76,7 @@
     } 
     
      @-webkit-keyframes bold-anim {
-        0%   {color: red; font-weight: normal;}
+        0%   {color: red; font-weight: normal; }
         10%  {color: green; font-weight: bold}
         20%  {color: blue; font-weight: normal;}
         30%  {color: yellow; font-weight: bold}
