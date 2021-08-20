@@ -21,22 +21,14 @@
     p{
       color:black;
 
-      width:420px;
-      height:250px;
-
       font-family: 'Oswald', sans-serif;
-      font-size:9em;
+      font-size:1rem;
       line-height:1;
       margin:0;
       padding:0;
 
       -webkit-transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg); 
       transform: rotateX(25deg) rotateY(20deg) rotateZ(-3deg);  
-
-      position:absolute;
-      left:50%;
-      top:50px;
-      margin-left:-180px;
 
       -webkit-animation: anim 3s;
       -webkit-animation-timing-function: linear;
@@ -48,31 +40,31 @@
     }
 
     @-webkit-keyframes anim {
-        0%{text-shadow:-6px 4px 0px red;}
-        10% {text-shadow:4px -6px 0px green;}
-        20% {text-shadow:-9px 4px 0px blue;}
-        30% {text-shadow:4px -6px 0px yellow;}
-        40% {text-shadow:-8px 4px 0px orange;}
-        50% {text-shadow:4px 5px 0px purple;}
-        60% {text-shadow:-6px 4px 0px brown;}
-        70% {text-shadow:4px 7px 0px pink;}
-        80% {text-shadow:-9px -4px 0px lime;}
-        90% {text-shadow:4px -6px 0px cyan;}
-        100% {text-shadow:-9px 4px 0px teal;}
+        0%   {color: red;}
+        10%  {color: green;}
+        20%  {color: blue;}
+        30%  {color: yellow;}
+        40%  {color: orange;}
+        50%  {color: purple;}
+        60%  {color: brown;}
+        70%  {color: pink;}
+        80%  {color: lime;}
+        90%  {color: cyan;}
+        100% {color: teal;}
     } 
 
     @keyframes anim {
-        0%{text-shadow:-6px 4px 0px red;}
-        10% {text-shadow:4px -6px 0px green;}
-        20% {text-shadow:-9px 4px 0px blue;}
-        30% {text-shadow:4px -6px 0px yellow;}
-        40% {text-shadow:-8px 4px 0px orange;}
-        50% {text-shadow:4px 5px 0px purple;}
-        60% {text-shadow:-6px 4px 0px brown;}
-        70% {text-shadow:4px 7px 0px pink;}
-        80% {text-shadow:-9px -4px 0px lime;}
-        90% {text-shadow:4px -6px 0px cyan;}
-        100% {text-shadow:-9px 4px 0px teal;}
+        0%   {color: red;}
+        10%  {color: green;}
+        20%  {color: blue;}
+        30%  {color: yellow;}
+        40%  {color: orange;}
+        50%  {color: purple;}
+        60%  {color: brown;}
+        70%  {color: pink;}
+        80%  {color: lime;}
+        90%  {color: cyan;}
+        100% {color: teal;}
     } 
     
     .link {
@@ -89,7 +81,7 @@
 }
 
 </style>
-<body style="background-color: aliceblue;">
+<body>
     <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light">
         <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
